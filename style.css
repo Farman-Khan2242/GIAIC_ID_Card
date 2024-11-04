@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+html,body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: lightgoldenrodyellow;
+    position: relative;
+}
+h1::before {
+    content: 'Hover to see the Back-side';
+    font-size: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    color: white
+    
+}
+.card-container {
+    perspective: 1000px;
+}
+.card {
+    width: 400px;
+    height: 238px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 5s;
+    
+}
+#front-site {
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(0, 208, 255);;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 7px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#giaic-logo {
+    width: 50px;
+    height: 40px;
+}
+#profile {
+    height: 120px;
+    width: 120px;
+    border: 2px solid rgb(0, 208, 255);
+}
+span {
+    color: rgb(0, 208, 255);
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+#q2 {
+    text-align: center;
+    color: rgb(199, 197, 197);
+    width: 80px;
+    background-color: gray;
+    clip-path: polygon(
+    0 0%,        
+    100% 0%,     
+    100% 0%,    
+    90% 50%,     
+    90% 100%,    
+    0 100%       
+);
+}
+
+#back-site {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 2px solid rgb(0, 208, 255);;
+    position: absolute;
+    padding: 40px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.flex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.background-1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.09;
+    background-image: url(./kamran.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.background-2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(./download.png);
+    opacity: 0.05;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 80%;
+    top: 0;
+    left: 0;
+}
+.scan-q2 {
+    height: 105%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#course-name {
+    width:53%;
+}
+#course {
+    font-size: 17px;
+    line-height: 28px;
+    color: rgb(19, 132, 174)
+}
+#quater-2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(0, 208, 255);
+    font-family: serif;
+}
+#div-scan {
+    height: 80px;
+    width: 80px;
+}
+#div-scan > img {
+    height: 100%;
+    width: 100%;
+}
+.card-container:hover .card {
+    transform: rotateY(180deg); /* Rotate the card on hover */
+  }
+
