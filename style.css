@@ -113,7 +113,7 @@ footer {
     width: 100%;
     position: absolute;
     opacity: 0.09;
-    background-image: url(./kamran.jpeg);
+    background-image: url(./Public/kamran.jpeg);
     background-position: top;
     background-repeat: no-repeat;
 }
@@ -121,7 +121,7 @@ footer {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url(./download.png);
+    background-image: url(./Public/download.png);
     opacity: 0.05;
     background-repeat: no-repeat;
     background-position: center;
